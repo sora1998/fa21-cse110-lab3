@@ -1,9 +1,39 @@
 @media screen and (max-width: 1000px){/* media query */
     div{
         color:red;
-    }
-
+    } 
   }
+
+  div p
+{
+  background-color:yellow; /* comb selector */
+}
+div>li
+{
+  background-color:green;
+}
+
+div+p
+{
+  background-color:lightblue;
+}
+
+input~div
+{
+  background-color:lightcoral;
+}
+  h1,.special{
+    color: blue; /* list selector */
+  }
+
+div[lang |="zh"]{
+    color: yellow;  /* attribute selector */
+}
+
+h2{
+    color: green; /* element selector */
+}
+
 @font-face {           /* font set */
     font-family: 'myFont';
     src: url('Akronim-Regular.ttf');
@@ -77,14 +107,16 @@
     border-color: black;
   }
 
-  .h1{          /* TEXT */
+  #indentified{          /* TEXT */
       color: red;
       text-align: center;
       text-decoration: underline;
       font-family: myFont, sans-serif; 
       font-size: 30px;
   }
-
+  *{
+      background-color: rgb(211, 211, 211); /* universal selector */
+  }
   .display1{    /* display set1 */
       display: inline;
   }
