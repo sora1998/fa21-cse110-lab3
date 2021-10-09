@@ -1,0 +1,137 @@
+@media screen and (max-width: 1000px){/* media query */
+    div{
+        color:red;
+    }
+
+  }
+@font-face {           /* font set */
+    font-family: 'myFont';
+    src: url('Akronim-Regular.ttf');
+}
+  .bg {
+    background-color: #D3D3D3;/* apply colors to the background */
+    width: 1000px;  /* apply the size */
+    height: 300px;
+    position: static;
+  }
+  .size{    /* apply the maxsize */
+    max-width: 1500px;
+    max-height: 500px;
+    position: sticky;
+  }
+  .wrapper {
+    font-size: 1.2em;  /* relative unit */
+  }
+
+  .cm{
+    width: 5cm;     /* relative unit */
+  }
+
+  .px {
+    width: 400px;   /* relative unit */
+  }
+
+  .mm{
+    width: 500mm    /* absolute unit */
+}
+
+  .vw {
+    width: 10vw;    /* relative unit */
+  }
+  
+
+  .ex{
+    width: 20ex;    /* relative unit */
+  }
+  .BoxModel1{    /* longhand box model use */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .BoxModel2{    /* shorthand box model use */
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: black;
+  }
+
+  .h1{          /* TEXT */
+      color: red;
+      text-align: center;
+      text-decoration: underline;
+      font-family: myFont, sans-serif; 
+      font-size: 30px;
+  }
+
+  .display1{    /* display set1 */
+      display: inline;
+  }
+  
+  .display2{    /* display set2 */
+      display: block;
+  }
+
+  button:hover {    /* Pseudo-classes*/
+    color: blue;
+  }
+
+  button:active{    /* Pseudo-classes*/
+    color: red;
+  }
+
+  .container1{   /* flexbox*/
+    display: flex;
+  }
+
+  .item1{
+      order: 5;
+      flex-grow: 4;
+      flex-shrink: 3;
+      flex-basis: auto;
+  }
+  .item2{
+    order: 4;
+    flex-grow: 3;
+    flex-shrink: 2;
+    flex-basis: auto;
+}
+
+.container2{   /* grid*/
+    display: grid;
+  }
+
+  .item-a {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
+
+  .item-b {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
