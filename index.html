@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="mystyle.css">
         <title>"ENZE MA'S LAB2(meeting minute)"</title>
         <meta name="ENZE MA" content="This is the web for ENZE MA's lab meeting minutes">
         <link rel="icon" type="image/x-icon" href="test.image"/>
     </head>
     <body>
+        <div class="bg">
         <header>Meeting Minute</header>
         <section>
-            <h1>LAB2</h1>
+            <div class="h1">LAB2</h1>
             <h2>HTLM Learning</h2>
             <h3>10/3/2021</h3>
+        </div>
         </section>
+        </div>
         <main>
-            <p> This a website to practice the my html skill</p>
-            <p> I will try some basic skill to implement the meeting minute</p>
-            <nav><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Some html Info</a></nav>
+        <div class="wrapper">
+            <div class="px"><p> This a website to practice the my html skill</p></div>
+            <div class="cm"><p> I will try some basic skill to implement the meeting minute</p></div>
+            <nav><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">
+                <div class="button:active">Some html Info</a></div></nav>
             <hr>
-            <details>
+        </div>
+        <details>
                 <summary>Attendance List:</summary>
             <ol>
-                <li>ENZE MA</li>
-                <li>Fangchi Yuan</li>
+                <div class="mm"><li>ENZE MA</li></div>
+                <div class="vw"><li>Fangchi Yuan</li></div>
             </ol>
             </details>
             <p><b class="keyword">Agenda of What The Meeting Will Cover:</b></p>
-            <p> Today, we are going to use some basic html skill to implement our lab2,
+            <div class="size"><div class="BoxModel1"><p> Today, we are going to use some basic html skill to implement our lab2,
                 and try to make a website to record our meeting. So, we should have two main part today.
-            </p>
+            </p></div></div>
             <ul>
-                <li>html Learning</li>
-                <li>html Practice</li>
+                <div class="ex"><li>html Learning</li></div>
+                <div class="display2"><li>html Practice</li></div>
             </ul>
             <hr>
             <div>
                 <p><b class="keyword">Things that were unfinished business from last meeting:</b></p>
             </div>
-            <p>We already use the "b", but we haven't use the <strong>strong</strong></p>
+            <div class="display1"><p>We already use the "b", but we haven't use the <strong>strong</strong></p></div>
             <hr>
             <p><b class="keyword">Things that are new business that need to be talked about:</b></p>
-            <p>We now need to try some new stuff <i>i</i> and <em>em</em> and also we need try the <i>br</i> function.
-                <br> This will be a new line to implement br function.</p>
+            <div class="BoxModel2"><p>We now need to try some new stuff <i>i</i> and <em>em</em> and also we need try the <i>br</i> function.
+                <br> This will be a new line to implement br function.</p></div>
+            <div class="container1">
+                <div class="item1">
+                <p>This is a area to test the flexbox and its child item1.</p>
+                </div>   
+                <div class="item2">
+                <p>This is a area to test the flexbox and its child item2.</p>
+                </div>
+            </div>
+
+            <div class="container2">
+                <div class="item-a">
+                <p>This is a area to test the grid and its child item-a.</p>
+                </div>   
+                <div class="item-b">
+                <p>This is a area to test the grid and its child item-b.</p>
+                </div>
+            </div>
+            
             <hr>
             <form>
                 <fieldset>
@@ -49,7 +74,7 @@
                 <label for="comment"><b class="keyword">Any miscellaneous comments / questions / concerns that anyone would like to bring up
                 </b></label><br><br>
                 <input type="text" id="comment" name="comment">
-                <button>Submit</button>
+                <div class="button:hover"><button>Submit</button></div>
                 </fieldset>
                 <p>Which kind of program language is your favorite?</p>
                 <input name="test1" list="test1"/>
